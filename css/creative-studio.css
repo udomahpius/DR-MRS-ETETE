@@ -25,7 +25,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #ff214f;
+  /* --primary: #ff214f; */
+  --primary: #3e0382;
   --secondary: #6c757d;
   --success: #A3C14A;
   --info: #47D8E0;
@@ -41,6 +42,19 @@
   --font-family-sans-serif: "Fira Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.btn-primary{
+  background-color:#0d0458e3 !important ;
+border: solid white 1px !important;
+  color: white !important;
+}
+.bg-g{
+  background-color:#0d0458e3 !important ;
+
+}
+.btn-primary:hover{
+  color: var(--warning) !important;
+}
+
 
 *,
 *::before,
@@ -160,13 +174,13 @@ sup {
 }
 
 a {
-  color: #ff214f;
+  color: #0d0458e3;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #d4002c;
+  color: #7a19e9;
   text-decoration: underline;
 }
 
@@ -513,7 +527,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #ff214f;
+  color: #16043fe3;
   word-break: break-word;
 }
 
@@ -538,7 +552,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #ff5477;
+  color: #16043fe3;
 }
 
 pre code {
@@ -2515,7 +2529,7 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #F85C70;
+  /* border-color: #F85C70; */
   padding-right: calc(1.5em + 1.92rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23F85C70' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23F85C70' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
@@ -4541,6 +4555,9 @@ input[type="button"].btn-block {
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
+}
+.navbar-brand img{
+  width: 90px !important;
 }
 
 .tab-content > .tab-pane {
@@ -11780,12 +11797,17 @@ pre .code {
     width: 80%;
   }
 }
+.Creative img{
+  width: 600px !important;
+}
 
 .header {
   height: 100%;
   min-height: 600px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  background: url(../imgs/g-img-bg.jpg) no-repeat center center fixed;
   background-size: cover;
+  background-color: var(--purple);
+  background-blend-mode: soft-light;
 }
 
 .header .overlay {
@@ -11899,20 +11921,22 @@ section.has-bg-img:after {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../imgs/section.jpg);
+  background-image: url(../imgs/g-img-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
+  background-color: var(--primary) !important;
+  background-blend-mode: soft-light !important;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
 
 section.has-bg-img.bg-img-1:after {
-  background-image: url(../imgs/section.jpg);
+  background-image: url(../imgs/g-img-bg.jpg);
 }
 
 section.has-bg-img.bg-img-2:after {
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../imgs/g-img-bg.jpg);
 }
 
 section .section-subtitle {
@@ -11946,8 +11970,8 @@ section .section-title {
 
 .about-wrapper .content {
   background-color: #fff;
-  box-shadow: 0 3px 80px rgba(173, 181, 189, 0.3), 0 0 10px rgba(173, 181, 189, 0.3) !important;
-  border-radius: 0.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 0.2rem;
   padding: 30px;
   position: relative;
 }
@@ -11957,8 +11981,8 @@ section .section-title {
   top: 10%;
   left: -60px;
   background: #ff214f;
-  box-shadow: 0 3px 80px rgba(173, 181, 189, 0.3), 0 0 10px rgba(173, 181, 189, 0.3) !important;
-  width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 200px;
   height: 80%;
   border-radius: 0.2rem;
 }
@@ -11972,7 +11996,19 @@ section .section-title {
   left: -45px;
   font-size: 35px;
 }
-
+.p-item{
+  padding: 1.1rem 3rem !important;
+   margin-bottom: 4px !important;
+   width: 50%;
+   border: 1px solid white;
+}
+.p-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.p-item i{
+  color:var(--red);
+  font-size: 2rem;
+}
 @media (max-width: 767.98px) {
   .about-wrapper {
     margin-left: 0;
