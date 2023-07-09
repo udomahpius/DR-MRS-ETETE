@@ -11998,7 +11998,7 @@ section .section-title {
 }
 .p-item{
   padding: 1.1rem 8px !important;
-   margin-bottom: 4px !important;
+   margin-bottom: 1rem !important;
    width: 50%;
    border: 1px solid white;
 }
@@ -12008,6 +12008,19 @@ section .section-title {
 .p-item i{
   color:var(--red);
   font-size: 2rem;
+}
+.card-height{
+  width: 100% !important;
+  height: 60vh !important;
+  transition: 0.5s all ease-in-out;
+}
+.nav-item .nav-link:hover{
+  color:var(--primary) !important;
+}
+.card-height:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 15px;
+  background-color: ivory;
 }
 @media (max-width: 767.98px) {
   .about-wrapper {
