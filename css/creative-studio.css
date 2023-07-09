@@ -12022,6 +12022,15 @@ section .section-title {
   border-radius: 15px;
   background-color: ivory;
 }
+.hover:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+  border-radius: 15px !important;
+  background-color:whitesmoke !important;
+
+}
+.bg-ivory{
+  background-color: ivory !important;
+}
 @media (max-width: 767.98px) {
   .about-wrapper {
     margin-left: 0;
