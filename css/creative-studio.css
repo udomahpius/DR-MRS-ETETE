@@ -12031,6 +12031,36 @@ section .section-title {
 .bg-ivory{
   background-color: ivory !important;
 }
+.font-size{
+  font-size: 1rem !important;
+  text-transform: uppercase;
+}
+.img-height img{
+  height: 250px !important;
+}
+.img-height .col-md-4{
+  margin-bottom: 4rem !important;
+}
+.img-height .col-md-4 .card-title{
+  font-size: 18px !important;
+}
+.social-links a img{
+  width: 50px !important;
+
+}
+/* .img-height .col-md-4 .card-body{
+  height: 450px !important;
+} */
+@media (max-width:700px){
+  .img-height img{
+    height: 100% !important;
+  }
+  /* .img-height .col-md-4 .card-body{
+    height: 100% !important;
+  } */
+  
+  
+}
 @media (max-width: 767.98px) {
   .about-wrapper {
     margin-left: 0;
